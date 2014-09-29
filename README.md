@@ -17,18 +17,18 @@ The results are staggering though.
 Iterating over 100,000 ASCII-representable characters and comparing to an
 ASCII-representable character:
 
-|       |Swift   | Objective-C |
-|-------|--------|-------------|
-| Time  | 0.727s | 0.002s      |
-| STDEV | 3%     | 13%         |
+|       |Swift [-O0] | Swift [-Os] | Objective-C [-O0] |
+|-------|------------|-------------|-------------------|
+| Time  | 0.727s     | 0.479s      | 0.002s            |
+| STDEV | 3%         | 2%          | 13%               |
 
 Iterating over 100,000 composite characters and comparing to a single
 ASCII-representable character has an interesting result:
 
-|       |Swift   | Objective-C |
-|-------|--------|-------------|
-| Time  | 1.053s | 0.008s      |
-| STDEV | 3%     | 14%         |
+|       |Swift [-O0] | Swift [-Os] | Objective-C [-O0] |
+|-------|------------|-------------|-------------------|
+| Time  | 1.053s     | 0.726s      | 0.008s            |
+| STDEV | 3%         | 3%          | 14%               |
 
 The Objective-C result is expected as I went from 100,000 to 425,000 unichars
 but Swift's costs did not scale nearly as much, meaning the internal work of
