@@ -1,0 +1,275 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB6AE86519D9E6570052FCF5 /* SwiftStringPerformance.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6AE86419D9E6570052FCF5 /* SwiftStringPerformance.swift */; };
+		EB6AE86719D9E6D20052FCF5 /* ObjectiveCStringPerformance.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6AE86619D9E6D20052FCF5 /* ObjectiveCStringPerformance.m */; };
+		EB6AE86A19D9E7320052FCF5 /* StringProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6AE86919D9E7320052FCF5 /* StringProvider.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EB6AE85919D9E5FE0052FCF5 /* String Performance Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "String Performance Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB6AE85D19D9E5FE0052FCF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB6AE86319D9E6570052FCF5 /* String Performance Tests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "String Performance Tests-Bridging-Header.h"; sourceTree = "<group>"; };
+		EB6AE86419D9E6570052FCF5 /* SwiftStringPerformance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftStringPerformance.swift; sourceTree = "<group>"; };
+		EB6AE86619D9E6D20052FCF5 /* ObjectiveCStringPerformance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectiveCStringPerformance.m; sourceTree = "<group>"; };
+		EB6AE86819D9E7320052FCF5 /* StringProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringProvider.h; sourceTree = "<group>"; };
+		EB6AE86919D9E7320052FCF5 /* StringProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringProvider.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB6AE85619D9E5FE0052FCF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB6AE84E19D9E5CE0052FCF5 = {
+			isa = PBXGroup;
+			children = (
+				EB6AE85B19D9E5FE0052FCF5 /* String Performance Tests */,
+				EB6AE85A19D9E5FE0052FCF5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB6AE85A19D9E5FE0052FCF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB6AE85919D9E5FE0052FCF5 /* String Performance Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB6AE85B19D9E5FE0052FCF5 /* String Performance Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EB6AE85C19D9E5FE0052FCF5 /* Supporting Files */,
+				EB6AE86419D9E6570052FCF5 /* SwiftStringPerformance.swift */,
+				EB6AE86619D9E6D20052FCF5 /* ObjectiveCStringPerformance.m */,
+				EB6AE86319D9E6570052FCF5 /* String Performance Tests-Bridging-Header.h */,
+				EB6AE86819D9E7320052FCF5 /* StringProvider.h */,
+				EB6AE86919D9E7320052FCF5 /* StringProvider.m */,
+			);
+			path = "String Performance Tests";
+			sourceTree = "<group>";
+		};
+		EB6AE85C19D9E5FE0052FCF5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB6AE85D19D9E5FE0052FCF5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB6AE85819D9E5FE0052FCF5 /* String Performance Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB6AE86019D9E5FE0052FCF5 /* Build configuration list for PBXNativeTarget "String Performance Tests" */;
+			buildPhases = (
+				EB6AE85519D9E5FE0052FCF5 /* Sources */,
+				EB6AE85619D9E5FE0052FCF5 /* Frameworks */,
+				EB6AE85719D9E5FE0052FCF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "String Performance Tests";
+			productName = "String Performance Tests";
+			productReference = EB6AE85919D9E5FE0052FCF5 /* String Performance Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB6AE84F19D9E5CE0052FCF5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				TargetAttributes = {
+					EB6AE85819D9E5FE0052FCF5 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+				};
+			};
+			buildConfigurationList = EB6AE85219D9E5CE0052FCF5 /* Build configuration list for PBXProject "String Performance" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EB6AE84E19D9E5CE0052FCF5;
+			productRefGroup = EB6AE85A19D9E5FE0052FCF5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB6AE85819D9E5FE0052FCF5 /* String Performance Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB6AE85719D9E5FE0052FCF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB6AE85519D9E5FE0052FCF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB6AE86A19D9E7320052FCF5 /* StringProvider.m in Sources */,
+				EB6AE86719D9E6D20052FCF5 /* ObjectiveCStringPerformance.m in Sources */,
+				EB6AE86519D9E6570052FCF5 /* SwiftStringPerformance.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EB6AE85319D9E5CE0052FCF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		EB6AE85419D9E5CE0052FCF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		EB6AE86119D9E5FE0052FCF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "String Performance Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "String Performance Tests/String Performance Tests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EB6AE86219D9E5FE0052FCF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "String Performance Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "String Performance Tests/String Performance Tests-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB6AE85219D9E5CE0052FCF5 /* Build configuration list for PBXProject "String Performance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB6AE85319D9E5CE0052FCF5 /* Debug */,
+				EB6AE85419D9E5CE0052FCF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB6AE86019D9E5FE0052FCF5 /* Build configuration list for PBXNativeTarget "String Performance Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB6AE86119D9E5FE0052FCF5 /* Debug */,
+				EB6AE86219D9E5FE0052FCF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB6AE84F19D9E5CE0052FCF5 /* Project object */;
+}
