@@ -39,6 +39,12 @@ slower than the Objective-C equivalent (see results above):
         }
     }
 
+**Note:** For simpler applications there are a variety of built-in search functions that 
+are incredibly performant.  I'm not looking at those directly because I am more interested 
+in whether or not fast String operations can be written *in Swift* using the provided APIs.
+This interest stems out of a CommonMark implementation I wrote using String and Character 
+which was unbearably slow.
+
 Older: Testing in Xcode 6.1β
 ----------------------------
 
