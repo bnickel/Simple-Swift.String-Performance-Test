@@ -26,7 +26,24 @@ class SwiftStringPerformance: XCTestCase {
         }
     }
     
+    func testAsciiIterationInUTF16View() {
+        
+        let text:String = StringProvider.stringWithLength(100000, unicode: false)
+        
+        sleep(2)
+        
+        self.measureBlock() {
+            let reference = first("~".utf16)!
+            for char in text.utf16 {
+                if char == reference {
+                    println(char)
+                }
+            }
+        }
+    }
+    
     func testUnicodeIteration() {
+        
         let text:String = StringProvider.stringWithLength(100000, unicode: true)
         
         sleep(2)
@@ -34,6 +51,22 @@ class SwiftStringPerformance: XCTestCase {
         self.measureBlock() {
             for char in text {
                 if char == Character("~") {
+                    println(char)
+                }
+            }
+        }
+    }
+    
+    func testUnicodeIterationInUTF16View() {
+        
+        let text:String = StringProvider.stringWithLength(100000, unicode: true)
+        
+        sleep(2)
+        
+        self.measureBlock() {
+            let reference = first("~".utf16)!
+            for char in text.utf16 {
+                if char == reference {
                     println(char)
                 }
             }
