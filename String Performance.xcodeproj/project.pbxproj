@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		EB6AE86519D9E6570052FCF5 /* SwiftStringPerformance.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6AE86419D9E6570052FCF5 /* SwiftStringPerformance.swift */; };
-		EB6AE86719D9E6D20052FCF5 /* ObjectiveCStringPerformance.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6AE86619D9E6D20052FCF5 /* ObjectiveCStringPerformance.m */; };
 		EB6AE86A19D9E7320052FCF5 /* StringProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6AE86919D9E7320052FCF5 /* StringProvider.m */; };
 /* End PBXBuildFile section */
 
@@ -17,7 +16,6 @@
 		EB6AE85D19D9E5FE0052FCF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB6AE86319D9E6570052FCF5 /* String Performance Tests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "String Performance Tests-Bridging-Header.h"; sourceTree = "<group>"; };
 		EB6AE86419D9E6570052FCF5 /* SwiftStringPerformance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftStringPerformance.swift; sourceTree = "<group>"; };
-		EB6AE86619D9E6D20052FCF5 /* ObjectiveCStringPerformance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectiveCStringPerformance.m; sourceTree = "<group>"; };
 		EB6AE86819D9E7320052FCF5 /* StringProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringProvider.h; sourceTree = "<group>"; };
 		EB6AE86919D9E7320052FCF5 /* StringProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringProvider.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -54,7 +52,6 @@
 			children = (
 				EB6AE85C19D9E5FE0052FCF5 /* Supporting Files */,
 				EB6AE86419D9E6570052FCF5 /* SwiftStringPerformance.swift */,
-				EB6AE86619D9E6D20052FCF5 /* ObjectiveCStringPerformance.m */,
 				EB6AE86319D9E6570052FCF5 /* String Performance Tests-Bridging-Header.h */,
 				EB6AE86819D9E7320052FCF5 /* StringProvider.h */,
 				EB6AE86919D9E7320052FCF5 /* StringProvider.m */,
@@ -136,7 +133,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB6AE86A19D9E7320052FCF5 /* StringProvider.m in Sources */,
-				EB6AE86719D9E6D20052FCF5 /* ObjectiveCStringPerformance.m in Sources */,
 				EB6AE86519D9E6570052FCF5 /* SwiftStringPerformance.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +264,7 @@
 				EB6AE86219D9E5FE0052FCF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
