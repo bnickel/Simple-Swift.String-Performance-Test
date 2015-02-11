@@ -43,10 +43,6 @@ class SwiftStringPerformance: XCTestCase {
     func XtestIteration() {
         let text:String = StringProvider.stringWithLength(4, unicode: true)
         for char in text {
-            switch char {
-            case .LargeRepresentation(_): print("Large: ")
-            case .SmallRepresentation(_): print("Small: ")
-            }
             println(join(",", map(String(char).unicodeScalars, { "\($0.value)" })))
         }
     }

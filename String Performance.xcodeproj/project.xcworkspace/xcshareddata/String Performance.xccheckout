@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>65511FC1-A06F-472B-8F69-D17C861C238F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>String Performance</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>A0CA2C91AE6DB20A6E81F3E585D01B89A69D019F</key>
+		<string>https://github.com/bnickel/Simple-Swift.String-Performance-Test.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>String Performance.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>A0CA2C91AE6DB20A6E81F3E585D01B89A69D019F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/bnickel/Simple-Swift.String-Performance-Test.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>A0CA2C91AE6DB20A6E81F3E585D01B89A69D019F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A0CA2C91AE6DB20A6E81F3E585D01B89A69D019F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Test%20Performance</string>
+		</dict>
+	</array>
+</dict>
+</plist>
