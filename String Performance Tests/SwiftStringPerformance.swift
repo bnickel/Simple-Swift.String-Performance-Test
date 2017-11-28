@@ -13,14 +13,14 @@ class SwiftStringPerformance: XCTestCase {
 
     func testAsciiIteration() {
         
-        let text:String = StringProvider.stringWithLength(100000, unicode: false)
+        let text:String = StringProvider.string(withLength: 100000, unicode: false)
         
         sleep(2)
         
-        self.measureBlock() {
-            for char in text {
+        self.measure() {
+            for char in text.characters {
                 if char == Character("~") {
-                    println(char)
+                    print(char)
                 }
             }
         }
@@ -28,15 +28,15 @@ class SwiftStringPerformance: XCTestCase {
     
     func testAsciiIterationInUTF16View() {
         
-        let text:String = StringProvider.stringWithLength(100000, unicode: false)
+        let text:String = StringProvider.string(withLength: 100000, unicode: false)
         
         sleep(2)
         
-        self.measureBlock() {
-            let reference = first("~".utf16)!
+        self.measure() {
+            let reference = "~".utf16.first!
             for char in text.utf16 {
                 if char == reference {
-                    println(char)
+                    print(char)
                 }
             }
         }
@@ -44,14 +44,14 @@ class SwiftStringPerformance: XCTestCase {
     
     func testUnicodeIteration() {
         
-        let text:String = StringProvider.stringWithLength(100000, unicode: true)
+        let text:String = StringProvider.string(withLength: 100000, unicode: true)
         
         sleep(2)
         
-        self.measureBlock() {
-            for char in text {
+        self.measure() {
+            for char in text.characters {
                 if char == Character("~") {
-                    println(char)
+                    print(char)
                 }
             }
         }
@@ -59,24 +59,24 @@ class SwiftStringPerformance: XCTestCase {
     
     func testUnicodeIterationInUTF16View() {
         
-        let text:String = StringProvider.stringWithLength(100000, unicode: true)
+        let text:String = StringProvider.string(withLength: 100000, unicode: true)
         
         sleep(2)
         
-        self.measureBlock() {
-            let reference = first("~".utf16)!
+        self.measure() {
+            let reference = "~".utf16.first!
             for char in text.utf16 {
                 if char == reference {
-                    println(char)
+                    print(char)
                 }
             }
         }
     }
     
     func XtestIteration() {
-        let text:String = StringProvider.stringWithLength(4, unicode: true)
-        for char in text {
-            println(join(",", map(String(char).unicodeScalars, { "\($0.value)" })))
+        let text:String = StringProvider.string(withLength: 4, unicode: true)
+        for char in text.characters {
+            print(String(char).unicodeScalars.map({ "\($0.value)" }).joined(separator: ","))
         }
     }
 
