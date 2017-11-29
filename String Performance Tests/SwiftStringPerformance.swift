@@ -18,7 +18,7 @@ class SwiftStringPerformance: XCTestCase {
         sleep(2)
         
         self.measure() {
-            for char in text.characters {
+            for char in text {
                 if char == Character("~") {
                     print(char)
                 }
@@ -49,7 +49,7 @@ class SwiftStringPerformance: XCTestCase {
         sleep(2)
         
         self.measure() {
-            for char in text.characters {
+            for char in text {
                 if char == Character("~") {
                     print(char)
                 }
@@ -75,7 +75,7 @@ class SwiftStringPerformance: XCTestCase {
     
     func XtestIteration() {
         let text:String = StringProvider.string(withLength: 4, unicode: true)
-        for char in text.characters {
+        for char in text {
             print(String(char).unicodeScalars.map({ "\($0.value)" }).joined(separator: ","))
         }
     }

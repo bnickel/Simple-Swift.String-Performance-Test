@@ -1,18 +1,35 @@
 Simple Swift.String Performance Test
 ====================================
 
-This is an initial performance test comparing iteration through a string in
-Swift and Objective-C.  With regards to complex Unicode characters, one would
+This is a basic performance test comparing iteration through a string in Swift and Objective-C.  With regards to complex Unicode characters, one would
 not expect a perfect apples-to-apples comparison since Objective-C returns
 `unichar` elements and Swift returns composed characters with possible heap
 usage in complex cases.  That said, ASCII representable characters should have
 a similar footprint.
 
-The results are staggering though.
+The results in Swift 1 were terrifying.  They've gotten a lot better.
 
 ![Screenshot from Instruments](screenshot.png)
 
-Latest: Testing in Xcode 6.3β
+Highlights
+----------
+
+- Swift 1.1 string searching was up to 363 times slower than Objective-C, making basically unusable for any sort of string processing.  A lot of that had to do with retaining and releasing on each iteration.  This as even worse in debug builds.
+- Swift 1.2 got it down to 76 times slower than Objective-C, still painfully slow.  I also discovered (or they added?) the utf16 view, which provided relatively raw access to the native data structure.  This was only about twice as slow in release builds.
+- Swift 2.0 didn't improve character iteration, but improved performance on debug build utf16 views.
+- Swift 3.0 improved performance a bit.
+- Swift 4.0 improved everything, a lot.  The biggest impact was on iterating over simple characters, which is now just 2.5 times slower than Objective-C.
+
+Latest: Testing in Xcode 9.1
+----------------------------
+
+Swift strings have continued to get faster over every release and Swift 4 is no exception.  Comparing Swift 4.0 to Swift 3.0 beta, the biggest improvement was with simple strings, those containing a simple latin alphabet, possibly up to those fitting in a single unichar.  Iterating through those is 18 times faster than it was, and less than three times slower than Objective-C.  The speeds are actually on par with what you'd get from the utf16 view in Swift 3.
+
+Composite characters are still much slower to iterate through but only about 12 times slower than Objective-C.
+
+The utf16 view is now only about 40% slower than Objective-C, which is a very reasonable amount of overhead.
+
+Older: Testing in Xcode 6.3β
 -----------------------------
 
 Xcode 6.3 (and Swift 1.2) has seen a substantial improvement in character iteration
